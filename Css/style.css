@@ -112,3 +112,14 @@ body
     margin-right: 130px;   
 }
 
+.tittle 
+{
+    
+    position: relative;
+    top: 340px;
+    left: 34%;
+    display: inline;
+    font-size: 30px;
+    color: #180F4A;
+}
+
