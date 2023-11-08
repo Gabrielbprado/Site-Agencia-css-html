@@ -8,53 +8,68 @@
 body
 {
     font-family: 'Roboto', sans-serif;
-    
 }
 
 .navbar
-{
-    padding: 30px;
+{   
     display: flex;
+    padding: 30px;
+    flex-flow: row wrap;
+    height: 100px;
     position: fixed;
     width: 100%;
-    background: white;
-    bottom: 845px;
-    z-index: 1;
-
+    justify-content: center;
     
+    bottom: 845px;  
 }
 
 header
 {
    position: relative;
    top: 100px;
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: center;
+   align-items: center;
+  
+   padding-top: 100px;
+   
 }
 
 .logo
 {
-    text-align: center;
+    flex: 20%;
+    margin-left:20px; 
+    position: relative;
+    bottom: 10px;
+    
+    
+}
+.logo h1
+{
     font-size: 40px;
-    font-family: 'Roboto', sans-serif;
-    margin-left:20px ;
-    width: 300px;
-    color: #180F4A;  
     font-family: 'Lobster', sans-serif;
+    color: #180F4A;
+    
 }
 
 
 .links
 {
     padding: 20px;    
-    margin-left: 49%;
+    flex: 70%;
+    text-align: right;
 }
 
 .links a 
 {
     text-decoration: none;
-    padding: 16px;  
+    padding: 20px 16px;  
     color: #180F4A;  
     font-size: 19px;
     font-weight: bolder;
+    position: relative;
+    bottom: 10px;
 }
 
 .links a:hover
@@ -66,11 +81,12 @@ header
 
 #btn_FaleConosco
 {
-    padding: 16px 20px;
+    padding: 10px 25px;
     color: white;
     background: #180F4A;
     border-radius: 4px;
-    margin-left: 50px;
+    margin-left: 5%;
+    margin-right:10%;
 }
 
 #btn_FaleConosco:hover
@@ -83,15 +99,30 @@ header
 .informacoes
 {
     width: 40%;
-    margin-left: 115px;
-    margin-top: 10%;
+    margin-left: 10%;
+    flex: 40%;
     color: #180F4A; 
+}
+
+.informacoes h2
+{
+    font-weight: 900;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    color: #180F4A; 
+}
+.informacoes p
+{
+    color: grey;
+    text-align: left; 
 }
 
 .Titulo
 {
     font-size: 70px;
-    padding: 10px;
+    padding: 20px;
+    
 }
 
 .informacoes p
@@ -101,14 +132,14 @@ header
 
 .btn_contrateagora
 {
-   padding: 20px;
-   text-decoration: none;
-   border: 1px solid black;
-   position: relative;
-   top: 50px; 
-   background: #FF2989;
-   color: white;
-   border-radius: 6px;
+    display: inline-block;
+    background: #FF2978;
+    padding:20px;
+    color:white;
+    text-transform: uppercase;
+    border-radius:5px;
+    text-decoration: none;
+    margin-top: 2%;
 
 }
 
@@ -120,58 +151,67 @@ header
 
 #img
 {
-    margin-top: -370px;
-    float: right;
-    margin-right: 200px;
     
+    margin-right:10%;
+    flex:40%;
+    text-align:center;
+}
+#TagImg
+{
+    max-width: 90%;
+
 }
 
- .tittle 
+
+
+ section
 {
     
-    position: relative;
-    top: 340px;
-    left: 34%;
-    display: inline;
-    font-size:40px;
-    color: #180F4A;
-    font-family: 'Lobster', sans-serif;
+    display: inline-block;
+    margin-top:80px;
+
+    margin-left:5%;
+    margin-right:5%;
+    padding:5%;
+    text-align: center;
+   
+}
+ section h1
+{  
+    width:100%;
+    font-size:50px;
+    margin:0;
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+    color:#180F4A;
    
 }
 
-.Card
+.Motions
 {
-    margin-top: 430px;
+    
+    margin-top:5%;
     display: flex;
-   
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
 
 .development {
     border: #FF2989 1px solid;
+    display: inline-block;
     height: 300px;
-    width: 390px;
+    width: 30%;
     border-radius: 8px;
-    margin: 20px;
-    position: relative;
-    left: 300px;
-    overflow: hidden; /* Adicionando overflow: hidden para esconder o conteúdo ao início */
+    margin: 1%;
+    padding: 20px;
     transition: background 0.3s, color 0.3s;
-}
-.ImgsCenter
-{
-        margin-left: 150px;
+    cursor: pointer;
 }
 
-.development h3
-{
-    margin-left: 60px;
-    padding: 16px;
-}
-.development p
-{
-    margin-left: 60px;
-    margin-right: 60px;
-}
+
+
+
 .development:hover 
 {
     background: #FF2989;
@@ -184,12 +224,7 @@ header
 .textPrivate p {
     margin: 60px;  
 }
-.textPrivate h2 {
-    margin-left: 120px;
-    position: relative;
-    top: 30px;
-   
-}
+
 .development:hover .texts {
     display: none;
    
@@ -234,7 +269,6 @@ footer
 
 #direitos
 {
-
     position: relative;
     left: 40px;
 }
