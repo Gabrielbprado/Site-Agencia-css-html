@@ -120,8 +120,9 @@ body
     top: 340px;
     left: 34%;
     display: inline;
-    font-size: 30px;
+    font-size:40px;
     color: #180F4A;
+    font-family: 'Lobster', sans-serif;
    
 }
 
@@ -129,6 +130,7 @@ body
 {
     margin-top: 430px;
     display: flex;
+   
 }
 
 .development {
@@ -185,6 +187,53 @@ body
 }
 .development:hover .textPrivate  {
     display: inline-block;
+}
+
+footer
+{
+    background-image:linear-gradient(180deg,#180F4A,#090422,black);
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.info_footer h2
+{
+    color: white;
+    font-size: 40px;
+    font-family: 'Lobster', sans-serif;
+    position: relative;
+    bottom: 50px;
+    left: 60px;
+}
+.info_footer P
+{
+    color: white;
+    position: relative;
+    padding: 16px;
+    left: 20px;
+    
+}
+
+#direitos
+{
+
+    position: relative;
+    left: 40px;
+}
+
+.whats
+{   
+    position: fixed;
+    bottom:5px;
+    right:5px;
+}
+
+.whats img
+{
+    width: 100px;
 }
 
 
