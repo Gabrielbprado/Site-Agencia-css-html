@@ -125,24 +125,23 @@ body
    
 }
 
-.developments
+.Card
 {
     margin-top: 430px;
     display: flex;
 }
 
-.development
-{
-    border:#FF2989 1px solid;
+.development {
+    border: #FF2989 1px solid;
     height: 300px;
     width: 390px;
     border-radius: 8px;
     margin: 20px;
     position: relative;
     left: 300px;
-    
+    overflow: hidden; /* Adicionando overflow: hidden para esconder o conteúdo ao início */
+    transition: background 0.3s, color 0.3s;
 }
-
 .ImgsCenter
 {
         margin-left: 150px;
@@ -158,11 +157,28 @@ body
     margin-left: 60px;
     margin-right: 60px;
 }
-
-.development:hover
+.development:hover 
 {
+    background: #FF2989;
+    color: white;
+}
+.textPrivate {
+    display: none;
+}
+.development:hover .texts {
+    display: none;
    
 }
+.development:hover img {
+    display: none;
+   
+}
+.development:hover .textPrivate  {
+    display: inline-block;
+}
+
+
+
 
 
 
