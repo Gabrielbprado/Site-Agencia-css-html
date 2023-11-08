@@ -164,6 +164,16 @@ body
 }
 .textPrivate {
     display: none;
+   
+}
+.textPrivate p {
+    margin: 60px;  
+}
+.textPrivate h2 {
+    margin-left: 120px;
+    position: relative;
+    top: 30px;
+   
 }
 .development:hover .texts {
     display: none;
