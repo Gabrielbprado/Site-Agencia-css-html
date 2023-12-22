@@ -1,36 +1,40 @@
-@media screen and (max-width: 1005px) {
-    .navbar {
+@media screen and (max-width: 1386px) {
+    
+    .links a
+    {
+        display:  none;
+        
+       
+    }
+   
+
+    .logo 
+    {
+      margin-left: 50%;
       
-        display: none;
     }
+}
 
-    .links
-    {
-        display: none;
-       
-
-    }
-
-    .logo
-    {
-       margin: 0;
-       text-align: center;
-       
-       
-
-    }
+@media screen and (max-width : 1072px)
+{
 
     header
     {
         position: relative;
-        top: 150px;
-    
+        top: 3vh;
     }
 
-    .infomacoes
+    .Motions
     {
-        flex: 100%;
-        text-align: center;
-
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 28%;
+        width: 80vh;
+        
+        
     }
+    
+    
+
 }

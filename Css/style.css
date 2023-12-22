@@ -14,25 +14,26 @@ body
 {   
     display: flex;
     padding: 30px;
-    flex-flow: row wrap;
-    height: 100px;
     position: fixed;
+    z-index: 1;
     width: 100%;
     justify-content: center;
-    
-    bottom: 845px;  
+    background-color: rgba(255, 255, 255, 0.5); 
+    backdrop-filter: blur(12px); 
+    align-items: center;
+    text-align: center;
+   
+  
 }
 
 header
 {
    position: relative;
-   top: 100px;
    display: flex;
    flex-flow: row wrap;
    justify-content: center;
    align-items: center;
-  
-   padding-top: 100px;
+   padding-top: 6.5%;
    
 }
 
@@ -43,14 +44,13 @@ header
     position: relative;
     bottom: 10px;
     
-    
+        
 }
 .logo h1
 {
     font-size: 40px;
     font-family: 'Lobster', sans-serif;
-    color: #180F4A;
-    
+    color: #180F4A; 
 }
 
 
@@ -59,6 +59,9 @@ header
     padding: 20px;    
     flex: 70%;
     text-align: right;
+    display: flex;
+    justify-content: right;
+    align-items: center;
 }
 
 .links a 
@@ -92,7 +95,7 @@ header
 #btn_FaleConosco:hover
 {
     border-top: 0;
-    background: #261e51;
+    background: #554e7c;
 
 }
 
@@ -102,15 +105,16 @@ header
     margin-left: 10%;
     flex: 40%;
     color: #180F4A; 
+   
+    
 }
 
 .informacoes h2
 {
     font-weight: 900;
-    font-size: 20px;
-    padding: 0;
-    margin: 0;
+    font-size: 20px;  
     color: #180F4A; 
+    
 }
 .informacoes p
 {
@@ -120,8 +124,8 @@ header
 
 .Titulo
 {
-    font-size: 70px;
-    padding: 20px;
+    font-size: 7vh;
+    padding: 2%;
     
 }
 
@@ -134,18 +138,18 @@ header
 {
     display: inline-block;
     background: #FF2978;
-    padding:20px;
+    padding:2.5%;
     color:white;
     text-transform: uppercase;
     border-radius:5px;
     text-decoration: none;
-    margin-top: 2%;
+    margin-top: 3%;
 
 }
 
 .btn_contrateagora:hover
 {
-    background: #bc3b75;
+    background: #cc7b9f;
 
 }
 
@@ -165,22 +169,19 @@ header
 
 
  section
-{
-    
+{   
     display: inline-block;
-    margin-top:80px;
-
+    margin-top:2%;
     margin-left:5%;
     margin-right:5%;
     padding:5%;
     text-align: center;
-   
+    
+
 }
  section h1
 {  
-    width:100%;
-    font-size:50px;
-    margin:0;
+    font-size:5vh;
     font-family: 'Lobster', cursive;
     font-weight: bold;
     color:#180F4A;
@@ -200,13 +201,14 @@ header
 .development {
     border: #FF2989 1px solid;
     display: inline-block;
-    height: 300px;
+    height: 25vh;
     width: 30%;
     border-radius: 8px;
     margin: 1%;
     padding: 20px;
     transition: background 0.3s, color 0.3s;
     cursor: pointer;
+    
 }
 
 
@@ -224,6 +226,7 @@ header
 .textPrivate p {
     margin: 60px;  
 }
+
 
 .development:hover .texts {
     display: none;
